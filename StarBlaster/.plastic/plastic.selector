@@ -1,4 +1,0 @@
-repository "StarBlaster/CITA212_Lab08_StarBlaster@2476034736574@cloud"
-  path "/"
-    br "/main"
-    co "/main"
