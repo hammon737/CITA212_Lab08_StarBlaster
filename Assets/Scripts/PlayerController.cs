@@ -9,13 +9,20 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [SerializeField] float rightBoundPadding;
     [SerializeField] float upBoundPadding;
     [SerializeField] float downBoundPadding;
+
+    Shooter playerShooter;
+
     InputAction moveAction;
+    InputAction fireaction;
+
     Vector3 moveVector;
     Vector2 minBounds;
     Vector2 maxBounds;
     void Start()
     {
+        playerShooter = GetComponent<Shooter>();
         moveAction = InputSystem.actions.FindAction("Move");
+        fireaction = InputSystem.actions.FindAction("Fire");
 
         InitBounds();
     }
@@ -23,6 +30,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     void Update()
     {
         movePlayer();
+        fireShooter();
     }
 
     void InitBounds()
@@ -41,6 +49,11 @@ public class NewMonoBehaviourScript : MonoBehaviour
         newPos.y = Mathf.Clamp(newPos.y, minBounds.y + downBoundPadding, maxBounds.y - upBoundPadding);
 
         transform.position = newPos;
+    }
+
+    void fireShooter()
+    {
+        playerShooter.isFiring = fireaction.IsPressed();
     }
 
 }

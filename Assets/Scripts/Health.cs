@@ -4,10 +4,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField] int health = 50;
 
-    private void Update()
-    {
-        Debug.Log(health);
-    }
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
