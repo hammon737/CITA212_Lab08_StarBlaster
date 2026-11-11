@@ -1,11 +1,23 @@
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "WaveConfig", menuName = "New WaveConfigSO")]
+[CreateAssetMenu(fileName = "WaveConfig", menuName = "New WaveConfig")]
 public class WaveConfigSO : ScriptableObject
 {
+    [SerializeField] GameObject[] enemyPrefabs;
     [SerializeField] Transform pathPrefab;
     [SerializeField] float enemyMoveSpeed = 5f;
+
+    public int GetEnemyCount()
+    {
+        return enemyPrefabs.Length;
+    }
+
+    public GameObject GetEnemyPrefab(int index)
+    {
+        return enemyPrefabs[index];
+    }
+
 
     public Transform GetStartingWaypoint()
     {
@@ -21,7 +33,7 @@ public class WaveConfigSO : ScriptableObject
     {
         Transform[] waypoints = new Transform[pathPrefab.childCount];
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < pathPrefab.childCount; i++)
         {
             waypoints[i] = pathPrefab.GetChild(i);
         }

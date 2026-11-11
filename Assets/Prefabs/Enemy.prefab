@@ -101,6 +101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 817463614469741835}
+  - component: {fileID: 5464530255330866855}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -124,3 +125,16 @@ Transform:
   - {fileID: 5604377782967192976}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5464530255330866855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6584649770855697968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f56f289b54213cd4ba161b429db2b61b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Pathfinding
+  waveConfig: {fileID: 11400000, guid: f73bb11de2185e94990caf2ae06594bf, type: 2}
