@@ -18,8 +18,11 @@ public class Shooter : MonoBehaviour
 
     Coroutine fireCoroutine;
 
+    AudioManager audioManager;
+
     void Start()
     {
+        audioManager = FindAnyObjectByType<AudioManager>();
         if (EnemyFire)
         {
             isFiring = true;
@@ -60,6 +63,8 @@ public class Shooter : MonoBehaviour
 
             float waitTime = Random.Range(baseFireRate - fireVariance, baseFireRate + fireVariance);
             waitTime = Mathf.Clamp(waitTime, minFireRate, float.MaxValue);
+
+            audioManager.PlayShootingSFX();
 
             yield return new WaitForSeconds(baseFireRate);
         }
