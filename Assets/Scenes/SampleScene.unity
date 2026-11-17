@@ -207,6 +207,7 @@ GameObject:
   - component: {fileID: 141817623}
   - component: {fileID: 141817622}
   - component: {fileID: 141817621}
+  - component: {fileID: 141817625}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -299,6 +300,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &141817625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141817620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c5febb05a3acd409d823cc21de4479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIUpdater
+  healthSlider: {fileID: 624776167}
+  playerHealth: {fileID: 2005271767}
+  scoreText: {fileID: 590299783}
 --- !u!1 &370335723
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,7 +585,7 @@ GameObject:
   - component: {fileID: 590299784}
   - component: {fileID: 590299783}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -641,10 +657,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 36
+  m_fontSize: 96
+  m_fontSizeBase: 96
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -705,7 +721,7 @@ GameObject:
   - component: {fileID: 624776166}
   - component: {fileID: 624776167}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: HP Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1277,6 +1293,17 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2005271767 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -8117936485934790297, guid: ac85a5c68ee94ee4898a259eb2551877, type: 3}
+  m_PrefabInstance: {fileID: 754300051161627382}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a569af0d3c95345b094481e5c611d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
 --- !u!1 &2094992785
 GameObject:
   m_ObjectHideFlags: 0
