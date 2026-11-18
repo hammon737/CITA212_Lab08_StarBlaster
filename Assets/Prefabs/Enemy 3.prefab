@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   isPlayer: 0
-  scoreValue: 100
+  scoreValue: 75
   health: 75
   hitParticles: {fileID: 4525387803710098794, guid: e3017aefa77a45e4c8af11dcc3a5b7c3, type: 3}
   applyCameraShake: 0
