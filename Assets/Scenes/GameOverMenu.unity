@@ -505,6 +505,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1042089928
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4154267476922560578, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154267476922560578, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154267476922560578, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154267476922560578, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154267476922560578, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154267476922560578, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154267476922560578, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154267476922560578, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154267476922560578, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154267476922560578, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839563715788034937, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+      propertyPath: m_Name
+      value: LevelManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+--- !u!114 &1042089929 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 902502926994082515, guid: b1295819bb327a2409bb0db1bb022157, type: 3}
+  m_PrefabInstance: {fileID: 1042089928}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28660648e5b7d954799748f4a2c1663b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelManager
 --- !u!1 &1108112944
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +990,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1566679326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1042089929}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1566679326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1106,6 +1186,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2356104224708902825, guid: 29cb17aaca436fa4eba9ef492922d33c, type: 3}
+      propertyPath: moveSpeed.y
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 2363604692985434525, guid: 29cb17aaca436fa4eba9ef492922d33c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1145,6 +1229,10 @@ PrefabInstance:
     - target: {fileID: 2363604692985434525, guid: 29cb17aaca436fa4eba9ef492922d33c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5365198239276110148, guid: 29cb17aaca436fa4eba9ef492922d33c, type: 3}
+      propertyPath: moveSpeed.y
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6728122636194926291, guid: 29cb17aaca436fa4eba9ef492922d33c, type: 3}
       propertyPath: m_Name
@@ -1513,7 +1601,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2068271014}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1042089929}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadTitle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2068271014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1561,3 +1661,4 @@ SceneRoots:
   - {fileID: 1223625294}
   - {fileID: 31653427}
   - {fileID: 729643378}
+  - {fileID: 1042089928}
