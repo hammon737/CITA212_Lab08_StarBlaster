@@ -4,9 +4,17 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    ScoreKeeper scoreKeeper;
+
+    void Awake()
+    {
+        scoreKeeper = FindAnyObjectByType<ScoreKeeper>();
+    }
+
     public void LoadGame()
     {
         SceneManager.LoadScene("GameScene");
+        scoreKeeper.resetScore();
     }
 
     public void LoadGameOver()

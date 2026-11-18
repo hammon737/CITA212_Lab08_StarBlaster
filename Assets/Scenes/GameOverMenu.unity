@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 31653426}
   - component: {fileID: 31653425}
   - component: {fileID: 31653424}
+  - component: {fileID: 31653428}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -225,6 +226,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &31653428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31653423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 338e63870bf987847ae35e41ad649a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIGameOver
+  scoreText: {fileID: 2023600996}
 --- !u!1 &173824249
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,6 +519,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &989674621
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6612153561644825019, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
+      propertyPath: m_Name
+      value: ScoreKeeper
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569545243152493267, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569545243152493267, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569545243152493267, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569545243152493267, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569545243152493267, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569545243152493267, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569545243152493267, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569545243152493267, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569545243152493267, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7569545243152493267, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6590fe252b226374aa0608fd5030ca66, type: 3}
 --- !u!1001 &1042089928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -725,7 +796,7 @@ PrefabInstance:
     - target: {fileID: 5976578151995830928, guid: 33d4934627754694c8f60ee6f063a1af, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 2fe3f695131014b428370690a3b7af5b, type: 3}
+      objectReference: {fileID: 8300000, guid: 41bf270619c9d9d45b09d1be453b014a, type: 3}
     - target: {fileID: 8471055846325944662, guid: 33d4934627754694c8f60ee6f063a1af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.6172
@@ -1392,7 +1463,7 @@ GameObject:
   - component: {fileID: 2023600997}
   - component: {fileID: 2023600996}
   m_Layer: 5
-  m_Name: Text (TMP) (2)
+  m_Name: Final Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1662,3 +1733,4 @@ SceneRoots:
   - {fileID: 31653427}
   - {fileID: 729643378}
   - {fileID: 1042089928}
+  - {fileID: 989674621}
